@@ -1,4 +1,6 @@
 import { useState } from "react";
+import menu from '../icons/menu.svg'
+import close from '../icons/close.svg'
 export const Header = () => {
     const Links =[
         {name:"Home",link:"/"},
@@ -21,7 +23,7 @@ export const Header = () => {
                 {/* logo section */}
                 <div className="flex w-full md:w-auto items-center justify-between flex-shrink-0 mb-3">
                     <a href="/" className="font-bold text-2xl mt-2 mr-0 lg:mr-3">3ync<span className="text-violet-700">.io</span></a>
-                    <ion-icon onClick={(e) => handleMenuClick(e)} name={menuOpen ? 'close':'menu'} class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                    <img onClick={(e) => handleMenuClick(e)} src={menuOpen ? `${close}` : `${menu}`} className="text-3xl cursor-pointer md:hidden w-8 h-8 mt-2" alt="menu"/>
                 </div>
                 {/* link items */}
                 <div 
@@ -51,4 +53,3 @@ export const Header = () => {
         </header>
     );
 };
-

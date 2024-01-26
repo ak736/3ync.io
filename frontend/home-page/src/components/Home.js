@@ -1,4 +1,5 @@
 import {Header} from "./Header"
+import landing from "../images/landing.svg"
 export const Home = () => {
   return (
     <div className="flex flex-col bg-gradient-to-t from-slate-900 from-10% via-violet-600 via-55% to-purple-50 to-90%">
@@ -11,8 +12,8 @@ export const Home = () => {
             <button className='bg-black border border-black text-white px-8 py-3 rounded-full hover:bg-[#26272b] whitespace-nowrap'>Get Started</button>
             <button className='text-white border border-white bg-transparent px-10 py-3 rounded-full hover:bg-black hover:border-black whitespace-nowrap'>Sign in</button>
           </div>
-          <div className="mt-12">
-            <img className="" src="https://media.istockphoto.com/id/1360927961/photo/abstract-background-with-interweaving-of-colored-lines-and-dots-network-connection-structure.jpg?s=1024x1024&w=is&k=20&c=HSvre5LDQ_l3IawJzR1CRtIvhsSVy_ggBm6d22_iud0=" alt="" />
+          <div className="mt-12 sm:mx-5">
+            <img className="" src={landing} alt="" />
           </div>
         </div>
     </div>
