@@ -1,17 +1,11 @@
-import "./App.css";
-import Nav from "./components/Nav";
-import Main from "./components/Main";
+// import "./App.css";
 
-import Thirdpage from "./components/ThirdPage";
-import SignUp from "./components/SignUp";
-import LandingPage from "./components/LandingPage";
-import SignUpPageLanding from "./components/SignUpPageLanding";
-//import landingpage from "../content/images/Landing Page.png";
+import Home from "./components/suryafiles/Home";
 
 function App() {
   return (
     <div>
-      <SignUpPageLanding />
+      <Home />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 
-const Fullnameinputform = ({
+const FrameForm = ({
   formLogInForm14FullName,
   enterYourFullNamePlacehol,
   propWidth,
@@ -26,4 +26,4 @@ const Fullnameinputform = ({
   );
 };
 
-export default Fullnameinputform;
+export default FrameForm;
