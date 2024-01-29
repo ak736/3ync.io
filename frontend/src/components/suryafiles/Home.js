@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./Header";
 import SignInPage from "../SignInPage";
+import landing from "../../content/images/landing.svg";
 const Home = () => {
   const [signin, setSignIn] = useState(false);
 
@@ -13,9 +14,9 @@ const Home = () => {
       {signin ? (
         <SignInPage />
       ) : (
-        <div className="flex flex-col bg-gradient-to-t from-slate-900 from-10% via-violet-600 via-55% to-purple-50 to-90%">
+        <div className="flex flex-col h-screen bg-gradient-to-t from-slate-900 from-10% via-violet-600 via-55% to-purple-50 to-90%">
           <Header />
-          <div className="flex flex-col items-center justify-center min-h-screen w-full p-6 sm:mt-4 mt-0">
+          <div className="flex flex-col items-center justify-center min-h-fit w-full  sm:mt-4 mt-0">
             <div className="mx-12 mt-10 mb-12">
               <h1 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-slate-950 from-10% via-slate-900 via-40% to-violet-800 to-90% inline-block text-transparent bg-clip-text">
                 Empowering the Future of <br />
@@ -33,12 +34,8 @@ const Home = () => {
                 Sign in
               </button>
             </div>
-            <div className="mt-12">
-              <img
-                className=""
-                src="https://media.istockphoto.com/id/1360927961/photo/abstract-background-with-interweaving-of-colored-lines-and-dots-network-connection-structure.jpg?s=1024x1024&w=is&k=20&c=HSvre5LDQ_l3IawJzR1CRtIvhsSVy_ggBm6d22_iud0="
-                alt=""
-              />
+            <div className="mt-12 sm:mx-5">
+              <img className="" src={landing} alt="" />
             </div>
           </div>
         </div>

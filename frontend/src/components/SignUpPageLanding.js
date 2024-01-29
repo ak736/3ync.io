@@ -19,7 +19,7 @@ const SignUpPageLanding = () => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center min-h-screen w-full sm:mt-4 mt-0">
       {showLanding ? (
         <Home />
       ) : (
