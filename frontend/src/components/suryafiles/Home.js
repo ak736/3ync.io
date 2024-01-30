@@ -1,18 +1,19 @@
 import { useState } from "react";
 import Header from "./Header";
-import SignInPage from "../SignInPage";
-import landing from "../../content/images/landing.svg";
-const Home = () => {
-  const [signin, setSignIn] = useState(false);
 
-  const handleSignIn = () => {
-    setSignIn(true);
+import landing from "../../content/images/landing.svg";
+import SignUpPage from "../SignUpPage";
+const Home = () => {
+  const [showSignUp, setShowSignUp] = useState(false);
+
+  const handleSignUp = () => {
+    setShowSignUp(true);
   };
 
   return (
     <div>
-      {signin ? (
-        <SignInPage />
+      {showSignUp ? (
+        <SignUpPage />
       ) : (
         <div className="flex flex-col h-screen bg-gradient-to-t from-slate-900 from-10% via-violet-600 via-55% to-purple-50 to-90%">
           <Header />
@@ -28,10 +29,10 @@ const Home = () => {
                 Get Started
               </button>
               <button
-                onClick={handleSignIn}
+                onClick={handleSignUp}
                 className="text-white border border-white bg-transparent px-10 py-3 rounded-full hover:bg-black hover:border-black whitespace-nowrap"
               >
-                Sign in
+                Sign Up
               </button>
             </div>
             <div className="mt-12 sm:mx-5">
