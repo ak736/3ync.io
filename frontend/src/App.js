@@ -6,10 +6,6 @@ function App() {
   return (
     <div>
       <Home />
-<<<<<<< HEAD
-      <Check />
-=======
->>>>>>> upendra
     </div>
   );
 }
