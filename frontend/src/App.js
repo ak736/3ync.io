@@ -7,11 +7,7 @@ function App() {
   return (
     <div>
       <Home />
-<<<<<<< HEAD
       <Check />
-=======
-      {/* This is the Aniket Branch */}
->>>>>>> origin/main
     </div>
   );
 }
